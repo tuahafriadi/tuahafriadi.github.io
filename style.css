@@ -33,7 +33,7 @@
         background-color: white;
         transition: 0.5s;
         animation-name: box-sizing;
-        animation-duration: 2s;
+        animation-duration: 12s;
   }
   .box-sizing:hover {
         color: white;
