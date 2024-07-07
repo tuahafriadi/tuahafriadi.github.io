@@ -3,21 +3,30 @@
         The Code is Open Source
         Enjoy!
         by TAFMIX.
+        ----------
+        Warning :  this code is not responsive !
 -->
 <!DOCTYPE html>
 <html>
 <head>
-        <link rel="shortcut icon" href="stars.png" type="image/png">
-  <title>Portfolio - Tuah Afriadi F.</title>
+  <link rel="shortcut icon" href="stars.png" type="image/png">
+  <title>Tuah Afriadi F.</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="style.css">
+  <script type="text/javascript">
+    function backHome() {
+      window.location.assign("#home")
+}
+  </script>
 </head>
-<body>
-  <div class="myporto">
+<body onload="thisLoad()">
+
+  <!-- Home page -->
+  <div class="myporto" id="home">
     <div class="container">
-      <div class="box-sizing">
+      <div class="box-sizing" style="display:none;" id="myDiv">
         <h1>HI THERE! I'M TUAH AFRIADI F.
             A DIGITAL DESIGNER & IT ENTHUSIAST
             MAKE A MINIMALIST AND SIMPLICITY
@@ -28,11 +37,74 @@
     </div>
   </div>
 
+  <!-- Template -->
+  <div class="template" id="template">
+    <div class="container-2">
+      <div class="box-template">
+        <h4>[+] Template will coming soon ...</h4>
+
+           <p>i will upload some assets design for free
+           there is a figma, photoshop, source code and
+           also premium content.
+
+           <u>Contact me for your works/project</u></p>
+           <button onclick="backHome()">↑</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- About -->
+  <div class="about" id="about">
+    <div class="container-3">
+      <div class="box-about">
+        <h4>[+] About Me</h4>
+
+           <p>Name : Tuah Afriadi Faturrahman
+            Address : Pekanbaru, Indonesia
+            Skills : Design, IT, FPS Games
+            Tools : Photoshop, Figma
+            Level Tools : 7.5 (1-10)</p>
+           <button onclick="backHome()">↑</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
   <div class="footer">
-    <a href="" style="text-decoration: none; cursor: default; transition: none; color: white;">(C) 2024</a>
-    <a href="#template" onclick="alert('Coming Soon!')">Template</a>
-    <a href="#about" onclick="alert('Coming Soon!')">About</a>
+    <a href="#home" style="text-decoration: none; cursor: pointer; transition: none; color: white;">(C) 2024</a>
+    <a href="#template">Template</a>
+    <a href="#about">About</a>
     <a href="#" onclick="alert('Contact : tuahafriadi.x@gmail.com')">Contact</a>
   </div>
+
+
+        <!-- NOT SUPPORT MOBILE DEVICES -->
+      <div class="disableMobile">
+        <div class="container-4">
+          <div class="noticeBox">
+            <h1>Oops.. Something went wrong here</h1>
+            <p>This app do not support for Mobile devices
+            Please open the page with <b style="color: #ddd;">Desktop mode</b> or move to <b style="color: #ddd;">PC/Laptop</b>.</p>
+            <br>
+            <a href="https://www.google.com">Exit</a>
+          </div>
+        </div>
+      </div>
+
+        <div class="loader-wrapper" id="loader">
+    <div class="loader">
+      <div class="loader"></div>
+    </div>
+  </div>
+  <Script>
+function thisLoad() {
+  myVar = setTimeout(showPage, 3000);
+}
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+
+  </Script>
 </body>
 </html>
