@@ -1,0 +1,73 @@
+  * {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;   
+  }
+  body {
+        color: white;
+        font-family: 'Space Mono';
+  }
+  .myporto {
+        width: 100vw;
+        height: 100vh;
+        background-color: black;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+  }
+  .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+  }
+  .box-sizing {
+        width: 500px;
+        height: 210px;
+        background-color: white;
+        transition: 0.5s;
+  }
+  .box-sizing:hover {
+        color: white;
+        width: 600px;
+        border-radius: 17px;
+  }
+  .box-sizing h1 {
+        color: black;
+        font-size: 20px;
+        font-weight: 400;
+        white-space: pre-line;
+        margin: 15px 20px auto;
+  }
+  .box-sizing p {
+        color: white;
+        font-size: 20px;
+        font-weight: 600;
+        white-space: pre-line;
+        padding: 20px 20px;
+        margin: 12px 0px auto;
+        background-color: blue;
+        text-decoration: none;
+        cursor: pointer;
+  }
+  .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 35%;
+        background-color: transparent;
+        text-align: center;
+  }
+  .footer a {
+        color: white;
+        text-align: center;
+        margin: 10px 20px auto;
+        transition: 0.5s;
+  }
+  .footer a:hover {
+        color: blue;
+        text-align: center;
+        margin: 10px 20px auto;
+  }
