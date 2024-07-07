@@ -1,32 +1,24 @@
-
-<!--
-        The Code is Open Source
-        Enjoy!
-        by TAFMIX.
-        ----------
-        Warning :  this code is not responsive !
--->
 <!DOCTYPE html>
 <html>
 <head>
   <link rel="shortcut icon" href="stars.png" type="image/png">
-  <title>Tuah Afriadi F.</title>
+  <title>Portfolio | Tuah Afriadi F.</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="style.css">
   <script type="text/javascript">
     function backHome() {
-      window.location.assign("#home")
+      window.location.assign("")
 }
   </script>
 </head>
-<body onload="thisLoad()">
+<body>
 
   <!-- Home page -->
   <div class="myporto" id="home">
     <div class="container">
-      <div class="box-sizing" style="display:none;" id="myDiv">
+      <div class="box-sizing">
         <h1>HI THERE! I'M TUAH AFRIADI F.
             A DIGITAL DESIGNER & IT ENTHUSIAST
             MAKE A MINIMALIST AND SIMPLICITY
@@ -71,7 +63,7 @@
 
   <!-- Footer -->
   <div class="footer">
-    <a href="#home" style="text-decoration: none; cursor: pointer; transition: none; color: white;">(C) 2024</a>
+    <a href="" style="text-decoration: none; cursor: default; transition: none; color: white;">(C) 2024</a>
     <a href="#template">Template</a>
     <a href="#about">About</a>
     <a href="#" onclick="alert('Contact : tuahafriadi.x@gmail.com')">Contact</a>
@@ -90,21 +82,5 @@
           </div>
         </div>
       </div>
-
-        <div class="loader-wrapper" id="loader">
-    <div class="loader">
-      <div class="loader"></div>
-    </div>
-  </div>
-  <Script>
-function thisLoad() {
-  myVar = setTimeout(showPage, 3000);
-}
-function showPage() {
-  document.getElementById("loader").style.display = "none";
-  document.getElementById("myDiv").style.display = "block";
-}
-
-  </Script>
 </body>
 </html>
