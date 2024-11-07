@@ -4,6 +4,8 @@
 	| Free recode. Life for Open Source !
 	|
 -->
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -41,7 +43,7 @@
   }
   .box-sizing {
   		margin-bottom: 50px;
-      background: blue;
+      background: #111;
       padding: 20px 20px;
       border-radius: 15px;
   }
@@ -64,8 +66,11 @@
     color: #999;
     text-align: left;
     font-family: 'IBM Plex Mono';
-    font-size: 11px;
+    font-size: 14px;
     margin: 5px 20px;
+  }
+  a {
+    text-decoration: none;
   }
   button {
   	border: none;
@@ -78,11 +83,11 @@
   	background: white;
     border-radius: 15px;
   	border: 1px dotted #444;
-  	color: blue;
+  	color: black;
   	transition: border 0.2s linear , background 0.4s linear;
   }
   button:hover {
-  	background: #001226;
+  	background: #222;
   	color: white;
     border: 1px dotted #0c0e14;
   }
@@ -113,12 +118,12 @@
 		<div class="errorpage">
 			<div class="container">
 				<div class="box-sizing">
-         
-            <button>CONVERT IMAGE TO PDF</button>
+          <a href="index.html"><p>< Back to Home</p></a>
+            <button onclick="window.location.href='image2pdf/'">CONVERT IMAGE TO PDF</button>
             <button>CONVERT YOUTUBE TO MP3/MP4</button>
             <br>
-            <button>MUBES HIMAPTIKA 2024/2025</button>
-            <button>MUBES HIMAPTIKA 2024/2025</button>
+            <button>LIVE CODING IN HTML/CSS</button>
+            <button onclick="window.location.href='mubes-himaptika-2024_2025/'">MUBES HIMAPTIKA 2024-2025</button>
 				</div>
 			</div>
 		</div>
