@@ -14,7 +14,7 @@
 
 
 <!DOCTYPE html>
-<html lang="id">
+<html>
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -22,6 +22,7 @@
 	<title>404 Not Found</title>
 	<style type="text/css">
 @import url('https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Syne+Mono&display=swap');
 
 * {
         margin: 0;
@@ -80,6 +81,26 @@
   	background: #aaa;
   	color: black;
   }
+  .footer {
+  	width: 100%;
+  	left: 0;
+  	bottom: 0;
+  	position: fixed;
+  	height: 2%;
+  	background: transparent;
+  	padding: 15px 5px;
+  	transition: background-color 0.4s linear , color 0.4s linear , font-size 0.4s ease;
+  }
+  .footer:hover {
+  	color: #615437;
+  	background-color: #090909;
+  	font-size: 11px;
+  }
+  .footer {
+  	font-family: 'Inter';
+  	color: #777;
+  	font-size: 12px;
+  }
 	</style>
 </head>
 <body>
@@ -93,6 +114,8 @@
 				</div>
 			</div>
 		</div>
+		<div class="footer">
+			<p>&copy; 2020-2024 Tuah Afriadi | Powered by GitHub Pages.</p>
 	</center>
 </body>
 </html>
